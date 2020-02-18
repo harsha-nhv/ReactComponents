@@ -1,12 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// Import the React libraries
+import React from 'react'
+import ReactDOM from 'react-dom'
+import faker from 'faker'
+import ComponentDetail from './ComponentDetail'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Create react component 
+const App = () =>{
+    return (
+        <div className="ui container comments">
+        
+        <ComponentDetail /> 
+        <ComponentDetail />
+        <ComponentDetail /> 
+        <ComponentDetail /> 
+        <ComponentDetail />
+        <ComponentDetail />   
+        </div>
+    )
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+// Display the React component
+ReactDOM.render(<App />, document.querySelector("#root"))
